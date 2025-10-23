@@ -5,18 +5,20 @@ import (
 )
 
 func main() {
-	var a int = 6
-
-	if a%2 == 0 {
-		for i := 0; i < a; i++ {
+	var width, length int
+	fmt.Print("Введите ширину: ")
+	fmt.Scan(&width)
+	fmt.Print("Введите длину: ")
+	fmt.Scan(&length)
+	if width == length {
+		for i := 0; i < length; i++ {
 
 			if i%2 == 0 {
-				for j := 0; j < a; j++ {
+				for j := 0; j < width; j++ {
 					fmt.Print("# ")
-
 				}
 			} else {
-				for j := 0; j < a-1; j++ {
+				for j := 0; j < width; j++ {
 					fmt.Print(" #")
 				}
 			}
@@ -25,7 +27,6 @@ func main() {
 
 	} else {
 
-		fmt.Print("Заданное число не четное")
-
+		fmt.Print("Длина и ширина должны быть равны для создания шахматной доски.")
 	}
 }
