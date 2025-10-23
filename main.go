@@ -11,7 +11,7 @@ func main() {
 		for i := 0; i < a; i++ {
 
 			if i%2 == 0 {
-				for o := 0; o < a; o++ {
+				for j := 0; j < a; j++ {
 					fmt.Print("# ")
 
 				}
@@ -20,7 +20,7 @@ func main() {
 					fmt.Print(" #")
 				}
 			}
-			fmt.Print("\n")
+			fmt.Println()
 		}
 
 	} else {
