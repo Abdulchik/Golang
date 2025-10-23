@@ -5,12 +5,12 @@ import (
 )
 
 func main() {
-	var a int = 7
-	var b int = 7
+	var a int = 5
+	var b int = 6
 
 	if a%2 == 0 && b%2 == 0 {
 		for i := 0; i < a; i++ {
-			fmt.Print("\n")
+
 			if i%2 == 0 {
 				for o := 0; o < b; o++ {
 					fmt.Print("# ")
@@ -21,9 +21,14 @@ func main() {
 					fmt.Print(" #")
 				}
 			}
+			fmt.Print("\n")
 		}
 
 	} else {
-		fmt.Print("Не четное число")
+		if a%2 != 0 {
+			fmt.Print("Первое заданное число не четное")
+		} else {
+			fmt.Print("Второе заданное число не четное")
+		}
 	}
 }
